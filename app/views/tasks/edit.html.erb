@@ -1,0 +1,7 @@
+<%= form_for @task do |f| %>
+  <%= f.label :id %>
+  <%= f.text_field :title %>
+  <%= f.text_field :details %>
+  <%= f.check_box :boolean %>
+  <%= f.submit %>
+<% end  %>

@@ -1,5 +1,12 @@
-<h1>The new rails task mgr</h1>
-<h2>Do these:</h2>
-<% @tasks.each do |task| %>
-  <a href="tasks/<%= task.id %>"><%= task.title %></a>
-<% end %>
+<div class="header">
+  <h1>The new rails task mgr</h1>
+  <h2>Do these:</h2>
+</div>
+
+<div class="container">
+  <ul>
+    <% @tasks.each do |task| %>
+      <li><input type="checkbox" name="" id="" <%= task.boolean == false ? "checked" : "" %>><a href="tasks/<%= task.id %>"><%= task.title %></a></li>
+    <% end %>
+  </ul>
+</div>

@@ -8,6 +8,7 @@
 100.times do
   Task.create(
     title: Faker::Cannabis.strain,
-    details: Faker::Cannabis.brand + Faker::Cannabis.buzzword + Faker::Cannabis.type
+    details: Faker::Cannabis.brand + Faker::Cannabis.buzzword + Faker::Cannabis.type,
+    boolean: false
     )
 end
