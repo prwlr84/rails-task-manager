@@ -6,3 +6,6 @@
   </div>
 </div>
 
+<%= link_to "EDIT", edit_task_path(@task) %>
+<%= link_to "BACK to all", tasks_path %>
+<%= link_to "DELETE", @task, method: :delete, data: { confirm: 'Really?'} %>
